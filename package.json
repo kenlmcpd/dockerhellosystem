@@ -1,16 +1,15 @@
+
+
 {
-  "name": "hello-system",
+  "name": "docker_web_app",
   "version": "1.0.0",
-  "description": "Greets the current operating system",
-  "main": "index.js",
+  "description": "Node.js on Docker",
+  "author": "First Last <first.last@example.com>",
+  "main": "server.js",
   "scripts": {
-    "start": "NODE_ENV=production node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "github.com/hermantnet/hello-system"
-  },
-  "author": "Thomas E Herman Jr",
-  "license": "ISC"
+  "dependencies": {
+    "express": "^4.16.1"
+  }
 }
