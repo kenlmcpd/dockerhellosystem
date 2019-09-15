@@ -35,7 +35,7 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', (req, res) => {
-	res.send('Hello Ken, Welcome to Docker\n');
+	res.send(`Hello, Docker is running on ${process.platform}\n`);
 });
 
 app.listen(PORT, HOST);
